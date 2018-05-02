@@ -12,8 +12,14 @@
         var u = navigator.userAgent;
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-        alert('是否是Android：' + isAndroid);
-        alert('是否是iOS：' + isiOS);
+        if(isiOS){
+            window.href=`https://itunes.apple.com/cn/app/%E7%88%B1%E9%80%94%E4%BC%B4/id1375635248?mt=8`
+        }
+        else if(isAndroid){
+            window.href=`https://itunes.apple.com/cn/app/%E7%88%B1%E9%80%94%E4%BC%B4/id1375635248?mt=8`
+
+        }
+
     </script>
 
 </head>
