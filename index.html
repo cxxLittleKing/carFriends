@@ -13,11 +13,16 @@
         var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
         var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
         if(isiOS){
+            alert('ios')
             window.location.href=`https://itunes.apple.com/cn/app/%E7%88%B1%E9%80%94%E4%BC%B4/id1375635248?mt=8`
         }
         else if(isAndroid){
+            alert('an')
             window.location.href=`https://itunes.apple.com/cn/app/%E7%88%B1%E9%80%94%E4%BC%B4/id1375635248?mt=8`
 
+        }
+        else{
+            alert('error')
         }
 
 
